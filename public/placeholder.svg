@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#171717"/>
+  <rect x="330" y="230" width="140" height="140" rx="16" fill="#D4AF37" opacity="0.85"/>
+  <text x="400" y="430" font-family="Georgia, serif" font-size="28" fill="#F7F4EC" text-anchor="middle">Square Builders Solutions</text>
+</svg>
