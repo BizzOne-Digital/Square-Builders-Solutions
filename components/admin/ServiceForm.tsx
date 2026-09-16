@@ -11,6 +11,7 @@ type FormState = {
   slug: string;
   description: string;
   longDescription: string;
+  bulletsText: string;
   imageUrl: string;
   icon: string;
   order: number;
@@ -22,6 +23,7 @@ const EMPTY: FormState = {
   slug: "",
   description: "",
   longDescription: "",
+  bulletsText: "",
   imageUrl: "",
   icon: "Hammer",
   order: 0,
@@ -43,6 +45,7 @@ export default function ServiceForm({
           slug: service.slug,
           description: service.description,
           longDescription: service.longDescription || "",
+          bulletsText: (service.bullets || []).join("\n"),
           imageUrl: service.imageUrl || "",
           icon: service.icon || "Hammer",
           order: service.order || 0,
@@ -65,10 +68,15 @@ export default function ServiceForm({
     try {
       const url = service ? `/api/admin/services/${service._id}` : "/api/admin/services";
       const method = service ? "PUT" : "POST";
+      const { bulletsText, ...rest } = form;
+      const bullets = bulletsText
+        .split("\n")
+        .map((b) => b.trim())
+        .filter(Boolean);
       const res = await fetch(url, {
         method,
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...rest, bullets }),
       });
       const data = await res.json();
       if (!res.ok || !data.success) {
@@ -127,6 +135,19 @@ export default function ServiceForm({
           rows={4}
           value={form.longDescription}
           onChange={(e) => update("longDescription", e.target.value)}
+          className="w-full rounded-lg border border-soft-gray px-3 py-2 text-sm"
+        />
+      </div>
+
+      <div>
+        <label className="mb-1.5 block text-sm font-medium text-soft-black">
+          Bullet Points (one per line)
+        </label>
+        <textarea
+          rows={5}
+          value={form.bulletsText}
+          onChange={(e) => update("bulletsText", e.target.value)}
+          placeholder={"Roof replacement & new roof installation\nRoof repair & storm damage restoration"}
           className="w-full rounded-lg border border-soft-gray px-3 py-2 text-sm"
         />
       </div>

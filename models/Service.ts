@@ -6,6 +6,7 @@ export interface IService {
   slug: string;
   description: string;
   longDescription: string;
+  bullets: string[];
   imageUrl: string;
   icon: string;
   order: number;
@@ -20,6 +21,7 @@ const ServiceSchema = new Schema<IService>(
     slug: { type: String, required: true, unique: true, trim: true, lowercase: true },
     description: { type: String, required: true },
     longDescription: { type: String, default: "" },
+    bullets: { type: [String], default: [] },
     imageUrl: { type: String, default: "" },
     icon: { type: String, default: "Hammer" },
     order: { type: Number, default: 0 },

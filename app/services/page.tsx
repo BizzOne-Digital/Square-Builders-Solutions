@@ -5,7 +5,10 @@ import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 import ServiceIcon from "@/components/ui/ServiceIcon";
 import { GoldButton } from "@/components/ui/GoldButton";
-import { MAIN_SERVICES, ADDITIONAL_CAPABILITIES } from "@/lib/content";
+import { ADDITIONAL_CAPABILITIES } from "@/lib/content";
+import { getActiveServices } from "@/lib/services";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -13,7 +16,8 @@ export const metadata: Metadata = {
     "Explore roofing, HVAC, kitchen remodeling, and bathroom remodeling services from Square Builders Solutions in Davenport, Florida.",
 };
 
-export default function ServicesPage() {
+export default async function ServicesPage() {
+  const services = await getActiveServices();
   return (
     <>
       <section className="bg-primary-black pt-40 pb-20">
@@ -32,7 +36,7 @@ export default function ServicesPage() {
       <section className="bg-white py-24">
         <Container>
           <div className="space-y-20">
-            {MAIN_SERVICES.map((service, i) => (
+            {services.map((service, i) => (
               <div
                 key={service.slug}
                 className={`grid grid-cols-1 items-center gap-12 lg:grid-cols-2 ${

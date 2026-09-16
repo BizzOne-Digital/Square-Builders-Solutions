@@ -28,6 +28,7 @@ export const serviceSchema = z.object({
     .regex(/^[a-z0-9-]+$/, "Slug may only contain lowercase letters, numbers, and hyphens."),
   description: z.string().trim().min(2).max(500),
   longDescription: z.string().trim().max(5000).optional().default(""),
+  bullets: z.array(z.string().trim().min(1).max(200)).max(20).optional().default([]),
   imageUrl: z.string().trim().optional().default(""),
   icon: z.string().trim().min(1).max(60).default("Hammer"),
   order: z.coerce.number().int().default(0),

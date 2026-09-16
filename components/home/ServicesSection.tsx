@@ -4,9 +4,10 @@ import { ArrowRight } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 import ServiceIcon from "@/components/ui/ServiceIcon";
-import { MAIN_SERVICES } from "@/lib/content";
+import { getActiveServices } from "@/lib/services";
 
-export default function ServicesSection() {
+export default async function ServicesSection() {
+  const services = await getActiveServices();
   return (
     <section className="bg-cream py-24">
       <Container>
@@ -22,7 +23,7 @@ export default function ServicesSection() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {MAIN_SERVICES.map((service) => (
+          {services.map((service) => (
             <Link
               key={service.slug}
               href="/services"
