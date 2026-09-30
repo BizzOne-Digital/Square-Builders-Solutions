@@ -123,7 +123,7 @@ export const WHY_CHOOSE_US = [
   },
   {
     icon: "Home",
-    title: "Locally Rooted in Davenport, FL",
+    title: "Locally Rooted in Central Florida",
     description:
       "We know Central Florida properties and weather, and we're proud to serve our neighbors.",
   },

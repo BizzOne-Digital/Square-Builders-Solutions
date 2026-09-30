@@ -24,13 +24,13 @@ export default async function AdminSettingsPage() {
           initial={{
             phone: settings?.phone || "321-292-4742",
             email: settings?.email || "karl@squarebuildersusa.com",
-            location: settings?.location || "Davenport, Florida",
+            location: settings?.location || "Central Florida",
             facebookUrl:
               settings?.facebookUrl || "https://www.facebook.com/profile.php?id=61570733018315",
             footerCopy: settings?.footerCopy || "Building Excellence. Maintaining Trust.",
             seoDefaultTitle:
               settings?.seoDefaultTitle ||
-              "Square Builders Solutions | Roofing, HVAC & Remodeling in Davenport FL",
+              "Square Builders Solutions | Roofing, HVAC & Remodeling in Central Florida",
             seoDefaultDescription: settings?.seoDefaultDescription || "",
           }}
         />

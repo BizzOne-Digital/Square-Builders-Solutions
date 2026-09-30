@@ -16,7 +16,7 @@ export default function Hero({
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-primary-black">
       <Image
         src={resolveImageUrl(imageUrl)}
-        alt="Square Builders Solutions project in Davenport, Florida"
+        alt="Square Builders Solutions project in Central Florida"
         fill
         priority
         className="object-cover"
@@ -27,7 +27,7 @@ export default function Hero({
 
       <div className="relative z-10 w-full max-w-7xl px-5 sm:px-8 lg:px-12 pt-24 mr-auto">
         <div className="max-w-2xl text-left lg:ml-8">
-          <Eyebrow>RESIDENTIAL • COMMERCIAL • DAVENPORT, FL</Eyebrow>
+          <Eyebrow>RESIDENTIAL • COMMERCIAL • CENTRAL FLORIDA</Eyebrow>
           <h1 className="mt-5 font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] text-white">
             {title}
           </h1>

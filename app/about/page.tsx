@@ -13,7 +13,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Square Builders Solutions — a Davenport, Florida contractor with 15+ years of experience in roofing, HVAC, and remodeling for residential and commercial clients.",
+    "Learn about Square Builders Solutions — a Central Florida contractor with 15+ years of experience in roofing, HVAC, and remodeling for residential and commercial clients.",
 };
 
 const VALUES = [
@@ -86,7 +86,7 @@ export default async function AboutPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70">
             {content.intro ||
-              "Square Builders Solutions is a Davenport, Florida-based contractor serving homeowners and business owners with roofing, HVAC, and remodeling expertise."}
+              "Square Builders Solutions is a Central Florida-based contractor serving homeowners and business owners with roofing, HVAC, and remodeling expertise."}
           </p>
         </Container>
       </section>
@@ -103,8 +103,8 @@ export default async function AboutPage() {
                 <p>
                   Square Builders Solutions was founded on a simple idea: property owners
                   deserve a contractor who treats their home or business like it matters —
-                  because it does. Led by owner Karl Payer, our team has spent more than 15
-                  years building the skills and reputation that Davenport-area clients rely
+                  because it does. Led by owner Demian Ponzo, our team has spent more than 15
+                  years building the skills and reputation that Central Florida clients rely
                   on today.
                 </p>
                 <p>

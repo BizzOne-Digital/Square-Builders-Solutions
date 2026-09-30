@@ -22,7 +22,7 @@ const SiteSettingsSchema = new Schema<ISiteSettings>(
   {
     phone: { type: String, default: "321-292-4742" },
     email: { type: String, default: "karl@squarebuildersusa.com" },
-    location: { type: String, default: "Davenport, Florida" },
+    location: { type: String, default: "Central Florida" },
     facebookUrl: {
       type: String,
       default: "https://www.facebook.com/profile.php?id=61570733018315",
@@ -30,18 +30,18 @@ const SiteSettingsSchema = new Schema<ISiteSettings>(
     footerCopy: { type: String, default: "Building Excellence. Maintaining Trust." },
     seoDefaultTitle: {
       type: String,
-      default: "Square Builders Solutions | Roofing, HVAC & Remodeling in Davenport FL",
+      default: "Square Builders Solutions | Roofing, HVAC & Remodeling in Central Florida",
     },
     seoDefaultDescription: {
       type: String,
       default:
-        "Square Builders Solutions delivers premium roofing, HVAC, kitchen and bathroom remodeling for residential and commercial clients in Davenport, Florida.",
+        "Square Builders Solutions delivers premium roofing, HVAC, kitchen and bathroom remodeling for residential and commercial clients in Central Florida.",
     },
     heroTitle: { type: String, default: "Building Excellence, Maintaining Trust" },
     heroSubtitle: {
       type: String,
       default:
-        "Full-service roofing, HVAC, and remodeling for homes and businesses across Davenport, Florida.",
+        "Full-service roofing, HVAC, and remodeling for homes and businesses across Central Florida.",
     },
     heroImageUrl: {
       type: String,
@@ -52,7 +52,7 @@ const SiteSettingsSchema = new Schema<ISiteSettings>(
     aboutPreviewText: {
       type: String,
       default:
-        "For more than 15 years, Square Builders Solutions has helped homeowners and business owners across Davenport, Florida protect and improve the properties they rely on every day.",
+        "For more than 15 years, Square Builders Solutions has helped homeowners and business owners across Central Florida protect and improve the properties they rely on every day.",
     },
   },
   { timestamps: true }

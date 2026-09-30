@@ -87,7 +87,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-gold shrink-0" /> Davenport, Florida
+                <MapPin className="h-4 w-4 text-gold shrink-0" /> Central Florida
               </li>
             </ul>
           </div>
@@ -95,7 +95,7 @@ export default function Footer() {
 
         <div className="mt-14 border-t border-white/10 pt-8 text-center">
           <p className="text-sm font-medium text-white/70">
-            Proudly Serving Davenport, FL and Surrounding Areas
+            Proudly Serving Central Florida and Surrounding Areas
           </p>
           <p className="mt-2 text-xs text-white/40">
             © {new Date().getFullYear()} Square Builders Solutions LLC. All rights reserved. —

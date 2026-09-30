@@ -12,7 +12,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Testimonials",
   description:
-    "Read what clients say about working with Square Builders Solutions on roofing, HVAC, and remodeling projects in Davenport, Florida.",
+    "Read what clients say about working with Square Builders Solutions on roofing, HVAC, and remodeling projects in Central Florida.",
 };
 
 async function getTestimonials(): Promise<ITestimonial[]> {

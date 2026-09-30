@@ -13,7 +13,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore roofing, HVAC, kitchen remodeling, and bathroom remodeling services from Square Builders Solutions in Davenport, Florida.",
+    "Explore roofing, HVAC, kitchen remodeling, and bathroom remodeling services from Square Builders Solutions in Central Florida.",
 };
 
 export default async function ServicesPage() {

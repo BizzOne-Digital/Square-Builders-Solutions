@@ -7,7 +7,7 @@ import ContactForm from "@/components/home/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Square Builders Solutions in Davenport, Florida for a free estimate on roofing, HVAC, kitchen, or bathroom remodeling.",
+    "Contact Square Builders Solutions in Central Florida for a free estimate on roofing, HVAC, kitchen, or bathroom remodeling.",
 };
 
 export default function ContactPage() {
@@ -63,7 +63,7 @@ export default function ContactPage() {
                   </span>
                   <div>
                     <p className="text-sm font-semibold text-soft-black">Location</p>
-                    <p className="text-sm text-soft-black/70">Davenport, Florida</p>
+                    <p className="text-sm text-soft-black/70">Central Florida</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">

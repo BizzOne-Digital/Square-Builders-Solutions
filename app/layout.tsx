@@ -20,11 +20,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.squarebuildersusa.com"),
   title: {
-    default: "Square Builders Solutions | Roofing, HVAC & Remodeling in Davenport FL",
+    default: "Square Builders Solutions | Roofing, HVAC & Remodeling in Central Florida",
     template: "%s | Square Builders Solutions",
   },
   description:
-    "Square Builders Solutions delivers premium roofing, HVAC, kitchen and bathroom remodeling for residential and commercial clients in Davenport, Florida.",
+    "Square Builders Solutions delivers premium roofing, HVAC, kitchen and bathroom remodeling for residential and commercial clients in Central Florida.",
   openGraph: {
     siteName: "Square Builders Solutions",
     type: "website",

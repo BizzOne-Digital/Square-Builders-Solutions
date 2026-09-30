@@ -37,7 +37,7 @@ export default async function AdminPagesPage() {
             heroTitle: settings?.heroTitle || "Building Excellence, Maintaining Trust",
             heroSubtitle:
               settings?.heroSubtitle ||
-              "Full-service roofing, HVAC, and remodeling for homes and businesses across Davenport, Florida.",
+              "Full-service roofing, HVAC, and remodeling for homes and businesses across Central Florida.",
             heroImageUrl: settings?.heroImageUrl || "",
             ctaText: settings?.ctaText || "Get a Free Estimate",
             aboutPreviewText: settings?.aboutPreviewText || "",
@@ -48,7 +48,7 @@ export default async function AdminPagesPage() {
             heading: aboutContent.heading || "Built on Craftsmanship. Guided by Trust.",
             intro:
               aboutContent.intro ||
-              "Square Builders Solutions is a Davenport, Florida-based contractor serving homeowners and business owners with roofing, HVAC, and remodeling expertise.",
+              "Square Builders Solutions is a Central Florida-based contractor serving homeowners and business owners with roofing, HVAC, and remodeling expertise.",
             imageUrl: aboutContent.imageUrl || "",
           }}
         />

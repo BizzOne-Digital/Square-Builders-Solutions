@@ -10,7 +10,7 @@ export default function Logo({ className }: { dark?: boolean; className?: string
       aria-label="Square Builders Solutions — Home"
     >
       <Image
-        src="/logo.png"
+        src="/logo1.png"
         alt="Square Builders Solutions"
         width={220}
         height={56}

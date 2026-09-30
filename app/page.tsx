@@ -15,9 +15,9 @@ import FinalCTA from "@/components/home/FinalCTA";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Square Builders Solutions | Roofing, HVAC & Remodeling in Davenport FL",
+  title: "Square Builders Solutions | Roofing, HVAC & Remodeling in Central Florida",
   description:
-    "Square Builders Solutions delivers premium roofing, HVAC, kitchen and bathroom remodeling for residential and commercial clients in Davenport, Florida.",
+    "Square Builders Solutions delivers premium roofing, HVAC, kitchen and bathroom remodeling for residential and commercial clients in Central Florida.",
 };
 
 async function getData() {
@@ -42,11 +42,11 @@ export default async function HomePage() {
   const heroTitle = settings?.heroTitle || "Building Excellence, Maintaining Trust";
   const heroSubtitle =
     settings?.heroSubtitle ||
-    "Full-service roofing, HVAC, and remodeling for homes and businesses across Davenport, Florida.";
+    "Full-service roofing, HVAC, and remodeling for homes and businesses across Central Florida.";
   const heroImage = settings?.heroImageUrl || "/hero.png";
   const aboutText =
     settings?.aboutPreviewText ||
-    "For more than 15 years, Square Builders Solutions has helped homeowners and business owners across Davenport, Florida protect and improve the properties they rely on every day.";
+    "For more than 15 years, Square Builders Solutions has helped homeowners and business owners across Central Florida protect and improve the properties they rely on every day.";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -54,7 +54,7 @@ export default async function HomePage() {
     name: "Square Builders Solutions",
     telephone: "+1-321-292-4742",
     email: "karl@squarebuildersusa.com",
-    areaServed: "Davenport, FL",
+    areaServed: "Central Florida",
     url: "https://www.squarebuildersusa.com",
   };
 
