@@ -2,7 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-export default function Logo({ className }: { dark?: boolean; className?: string }) {
+export default function Logo({
+  className,
+  priority = false,
+}: {
+  dark?: boolean;
+  className?: string;
+  priority?: boolean;
+}) {
   return (
     <Link
       href="/"
@@ -12,10 +19,10 @@ export default function Logo({ className }: { dark?: boolean; className?: string
       <Image
         src="/logo1.png"
         alt="Square Builders Solutions"
-        width={220}
-        height={56}
-        priority
-        className="h-10 w-auto sm:h-12 object-contain"
+        width={1536}
+        height={1024}
+        priority={priority}
+        className="h-16 w-auto sm:h-20 object-contain"
       />
     </Link>
   );
