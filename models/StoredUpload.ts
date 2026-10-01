@@ -1,6 +1,7 @@
 import { Schema, models, model } from "mongoose";
+import { UPLOAD_FOLDERS } from "@/lib/constants";
 
-export const UPLOAD_FOLDERS = ["products", "gallery", "pages", "misc"] as const;
+export { UPLOAD_FOLDERS };
 
 export interface IStoredUpload {
   _id: string;

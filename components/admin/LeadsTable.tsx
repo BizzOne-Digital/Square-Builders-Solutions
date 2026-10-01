@@ -3,7 +3,8 @@
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { X } from "lucide-react";
-import { LEAD_STATUSES, type ILead } from "@/models/Lead";
+import { LEAD_STATUSES } from "@/lib/constants";
+import type { ILead } from "@/models/Lead";
 
 export default function LeadsTable({ leads }: { leads: ILead[] }) {
   const router = useRouter();

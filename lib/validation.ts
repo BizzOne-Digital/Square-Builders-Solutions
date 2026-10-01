@@ -1,6 +1,5 @@
 import { z } from "zod";
-import { PROJECT_TYPES, PROPERTY_TYPES } from "@/models/Lead";
-import { UPLOAD_FOLDERS } from "@/models/StoredUpload";
+import { PROJECT_TYPES, PROPERTY_TYPES, UPLOAD_FOLDERS } from "@/lib/constants";
 
 export const leadSchema = z.object({
   name: z.string().trim().min(2, "Please enter your full name.").max(120),

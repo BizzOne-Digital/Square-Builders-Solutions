@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Loader2, CheckCircle2, AlertCircle } from "lucide-react";
 import { leadSchema } from "@/lib/validation";
-import { PROJECT_TYPES, PROPERTY_TYPES } from "@/models/Lead";
+import { PROJECT_TYPES, PROPERTY_TYPES } from "@/lib/constants";
 
 type FormState = {
   name: string;
