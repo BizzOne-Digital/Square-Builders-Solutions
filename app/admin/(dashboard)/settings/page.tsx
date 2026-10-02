@@ -22,7 +22,7 @@ export default async function AdminSettingsPage() {
       <div className="mt-6">
         <SettingsForm
           initial={{
-            phone: settings?.phone || "321-292-4742",
+            phone: settings?.phone || "(321) 292-4742",
             email: settings?.email || "karl@squarebuildersusa.com",
             location: settings?.location || "Central Florida",
             facebookUrl:

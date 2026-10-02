@@ -79,7 +79,7 @@ export default function Header() {
             className="flex items-center gap-2 text-sm font-medium text-white/90 hover:text-gold transition-colors"
           >
             <Phone className="h-4 w-4 text-gold" aria-hidden="true" />
-            321-292-4742
+            (321) 292-4742
           </a>
           <Link
             href="/contact"
@@ -127,7 +127,7 @@ export default function Header() {
                 className="flex items-center gap-2 px-3 py-3 text-base font-medium text-white/90"
               >
                 <Phone className="h-4 w-4 text-gold" aria-hidden="true" />
-                321-292-4742
+                (321) 292-4742
               </a>
               <Link
                 href="/contact"

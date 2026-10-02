@@ -75,7 +75,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-white/70">
               <li>
                 <a href="tel:3212924742" className="flex items-center gap-2 hover:text-white">
-                  <Phone className="h-4 w-4 text-gold shrink-0" /> 321-292-4742
+                  <Phone className="h-4 w-4 text-gold shrink-0" /> (321) 292-4742
                 </a>
               </li>
               <li>

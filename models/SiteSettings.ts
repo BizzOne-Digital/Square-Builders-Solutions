@@ -20,7 +20,7 @@ export interface ISiteSettings {
 
 const SiteSettingsSchema = new Schema<ISiteSettings>(
   {
-    phone: { type: String, default: "321-292-4742" },
+    phone: { type: String, default: "(321) 292-4742" },
     email: { type: String, default: "karl@squarebuildersusa.com" },
     location: { type: String, default: "Central Florida" },
     facebookUrl: {

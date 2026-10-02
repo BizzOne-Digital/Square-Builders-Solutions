@@ -39,7 +39,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm font-semibold text-soft-black">Phone</p>
                     <a href="tel:3212924742" className="text-sm text-soft-black/70 hover:text-gold">
-                      321-292-4742
+                      (321) 292-4742
                     </a>
                   </div>
                 </li>
