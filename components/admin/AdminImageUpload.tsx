@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { UploadCloud, X, Loader2 } from "lucide-react";
-import { resolveImageUrl } from "@/lib/uploads";
+import { resolveImageUrl } from "@/lib/image-utils";
 
 const MAX_SIZE_BYTES = 8 * 1024 * 1024;
 const ACCEPTED_TYPES = ["image/jpeg", "image/png", "image/webp", "image/gif"];
