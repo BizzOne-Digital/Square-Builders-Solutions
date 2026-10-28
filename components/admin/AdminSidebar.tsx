@@ -36,7 +36,7 @@ export default function AdminSidebar() {
   }
 
   return (
-    <aside className="flex h-full w-64 shrink-0 flex-col bg-primary-black">
+    <aside className="fixed inset-y-0 left-0 z-40 flex h-dvh w-64 shrink-0 flex-col bg-primary-black overflow-y-auto">
       <div className="px-6 py-6">
         <Logo />
       </div>
