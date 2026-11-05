@@ -103,9 +103,8 @@ export default async function AboutPage() {
                 <p>
                   Square Builders Solutions was founded on a simple idea: property owners
                   deserve a contractor who treats their home or business like it matters —
-                  because it does. Led by owner Demian Ponzo, our team has spent more than 15
-                  years building the skills and reputation that Central Florida clients rely
-                  on today.
+                  because it does. Our team has spent more than 15 years building the skills
+                  and reputation that Central Florida clients rely on today.
                 </p>
                 <p>
                   What began with roofing and repair work has grown into a full-service
